@@ -1,6 +1,5 @@
 package TableSymboles;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 
@@ -8,7 +7,7 @@ public class TableS
 
 {
 
-   HashMap<String,TSobjects> table= new HashMap<String,TSobjects>();
+   public HashMap<String,TSobjects> table= new HashMap<String,TSobjects>();
 
 
 
@@ -27,9 +26,16 @@ public class TableS
   {
      table.remove(s);
   }
+  public void update(String s,Object value)
+  {
+      TSobjects o=table.get(s);
+      o.setValue(value);
+     table.put(s,o);
+  }
 
   public TSobjects getObject(String s)
   {
       return table.get(s);
   }
+
 }

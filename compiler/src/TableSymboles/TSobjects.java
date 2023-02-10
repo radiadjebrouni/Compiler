@@ -1,16 +1,13 @@
 package TableSymboles;
 
-import java.util.HashMap;
-
 public class TSobjects {
-
     Object value;
     int declared;
-    String type;
+    int type;  //0 Integer, 1 float, 2 string
 
-    public TSobjects(Object value, int declared, String type) {
+    public TSobjects(Object value, int declared, int type) {
         this.value = value;
-        this.declared = declared;
+        this.declared = 0;
         this.type = type;
     }
 
@@ -30,11 +27,11 @@ public class TSobjects {
         this.declared = declared;
     }
 
-    public String getType() {
+    public int getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(int type) {
         this.type = type;
     }
 }

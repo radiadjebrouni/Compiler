@@ -1,4 +1,4 @@
-// Generated from C:/Users/Administrateur/IdeaProjects/compiler/src\TinyLanguage_SII.g4 by ANTLR 4.9.1
+// Generated from C:/Users/Administrateur/IdeaProjects/CompilerSII/src\TinyLanguage_SII.g4 by ANTLR 4.9.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -39,6 +39,18 @@ public class TinyLanguage_SIIBaseListener implements TinyLanguage_SIIListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterDec(TinyLanguage_SIIParser.DecContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDec(TinyLanguage_SIIParser.DecContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterType(TinyLanguage_SIIParser.TypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -46,18 +58,6 @@ public class TinyLanguage_SIIBaseListener implements TinyLanguage_SIIListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitType(TinyLanguage_SIIParser.TypeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterNomvar(TinyLanguage_SIIParser.NomvarContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitNomvar(TinyLanguage_SIIParser.NomvarContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -75,18 +75,6 @@ public class TinyLanguage_SIIBaseListener implements TinyLanguage_SIIListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTtinst(TinyLanguage_SIIParser.TtinstContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitTtinst(TinyLanguage_SIIParser.TtinstContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterInst(TinyLanguage_SIIParser.InstContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -99,13 +87,13 @@ public class TinyLanguage_SIIBaseListener implements TinyLanguage_SIIListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIf(TinyLanguage_SIIParser.IfContext ctx) { }
+	@Override public void enterInstif(TinyLanguage_SIIParser.InstifContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIf(TinyLanguage_SIIParser.IfContext ctx) { }
+	@Override public void exitInstif(TinyLanguage_SIIParser.InstifContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -123,6 +111,30 @@ public class TinyLanguage_SIIBaseListener implements TinyLanguage_SIIListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterAff(TinyLanguage_SIIParser.AffContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAff(TinyLanguage_SIIParser.AffContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEl(TinyLanguage_SIIParser.ElContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEl(TinyLanguage_SIIParser.ElContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterOpr(TinyLanguage_SIIParser.OprContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -130,6 +142,18 @@ public class TinyLanguage_SIIBaseListener implements TinyLanguage_SIIListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitOpr(TinyLanguage_SIIParser.OprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterT(TinyLanguage_SIIParser.TContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitT(TinyLanguage_SIIParser.TContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -171,6 +195,18 @@ public class TinyLanguage_SIIBaseListener implements TinyLanguage_SIIListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterDoo(TinyLanguage_SIIParser.DooContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDoo(TinyLanguage_SIIParser.DooContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterScan(TinyLanguage_SIIParser.ScanContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -178,6 +214,18 @@ public class TinyLanguage_SIIBaseListener implements TinyLanguage_SIIListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitScan(TinyLanguage_SIIParser.ScanContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPrint(TinyLanguage_SIIParser.PrintContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPrint(TinyLanguage_SIIParser.PrintContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -195,13 +243,25 @@ public class TinyLanguage_SIIBaseListener implements TinyLanguage_SIIListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPrint(TinyLanguage_SIIParser.PrintContext ctx) { }
+	@Override public void enterId(TinyLanguage_SIIParser.IdContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPrint(TinyLanguage_SIIParser.PrintContext ctx) { }
+	@Override public void exitId(TinyLanguage_SIIParser.IdContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterIdp(TinyLanguage_SIIParser.IdpContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitIdp(TinyLanguage_SIIParser.IdpContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

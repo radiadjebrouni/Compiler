@@ -1,0 +1,22 @@
+compil Arrt() {
+intCompil a,b;
+floatCompil Afloat;
+stringCompil Sstring;
+start
+printCompil (tdhjfj );
+printCompil (a );
+scanCompil(b);
+
+do{
+if (a==3)
+then
+{
+a=3;
+b=a*3 + 4;
+}
+else
+{a=5+5;}
+
+}while(a<3)
+
+}

@@ -1,4 +1,4 @@
-// Generated from C:/Users/Administrateur/IdeaProjects/compiler/src\TinyLanguage_SII.g4 by ANTLR 4.9.1
+// Generated from C:/Users/Administrateur/IdeaProjects/CompilerSII/src\TinyLanguage_SII.g4 by ANTLR 4.9.1
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -22,17 +22,17 @@ public interface TinyLanguage_SIIVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitDeclar(TinyLanguage_SIIParser.DeclarContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#dec}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDec(TinyLanguage_SIIParser.DecContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#type}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitType(TinyLanguage_SIIParser.TypeContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#nomvar}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitNomvar(TinyLanguage_SIIParser.NomvarContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#desc}.
 	 * @param ctx the parse tree
@@ -40,23 +40,17 @@ public interface TinyLanguage_SIIVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitDesc(TinyLanguage_SIIParser.DescContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#ttinst}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitTtinst(TinyLanguage_SIIParser.TtinstContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#inst}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitInst(TinyLanguage_SIIParser.InstContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#if}.
+	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#instif}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitIf(TinyLanguage_SIIParser.IfContext ctx);
+	T visitInstif(TinyLanguage_SIIParser.InstifContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#comp}.
 	 * @param ctx the parse tree
@@ -64,11 +58,29 @@ public interface TinyLanguage_SIIVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitComp(TinyLanguage_SIIParser.CompContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#aff}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAff(TinyLanguage_SIIParser.AffContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#el}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEl(TinyLanguage_SIIParser.ElContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#opr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitOpr(TinyLanguage_SIIParser.OprContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#t}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitT(TinyLanguage_SIIParser.TContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#exp}.
 	 * @param ctx the parse tree
@@ -88,11 +100,23 @@ public interface TinyLanguage_SIIVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitBoucle(TinyLanguage_SIIParser.BoucleContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#doo}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDoo(TinyLanguage_SIIParser.DooContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#scan}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitScan(TinyLanguage_SIIParser.ScanContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#print}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPrint(TinyLanguage_SIIParser.PrintContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#ids}.
 	 * @param ctx the parse tree
@@ -100,9 +124,15 @@ public interface TinyLanguage_SIIVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitIds(TinyLanguage_SIIParser.IdsContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#print}.
+	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#id}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitPrint(TinyLanguage_SIIParser.PrintContext ctx);
+	T visitId(TinyLanguage_SIIParser.IdContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link TinyLanguage_SIIParser#idp}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIdp(TinyLanguage_SIIParser.IdpContext ctx);
 }
